@@ -1,0 +1,107 @@
+@font-face {
+  src: url(../../assets/fonts/Segoe\ Script.ttf);
+  font-family: Segoe Script; }
+@font-face {
+  font-family: Futura;
+  src: url(../fonts/futura-light.ttf); }
+@font-face {
+  font-family: FuturaBold;
+  src: url(../fonts/Futura\ Bold\ font.ttf); }
+@font-face {
+  font-family: FuturaMedium;
+  src: url(../fonts/futura\ medium\ bt.ttf); }
+@font-face {
+  font-family: FuturaHeavy;
+  src: url(../fonts/Futura\ Heavy\ font.ttf); }
+body {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: FuturaMedium, Montserrat;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  overflow-x: hidden;
+  font-size: 18px;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: transparent; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: FuturaMedium, Montserrat !important;
+  line-height: 1.5;
+  font-size: 14px; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+img {
+  border-style: none;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto; }
+
+button {
+  border-radius: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  overflow: visible;
+  text-transform: none;
+  -webkit-appearance: button; }
+  button:focus {
+    outline: none;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline: none; }
+  button:not(:disabled) {
+    cursor: pointer; }
+  button::-moz-focus-inner {
+    border-style: none;
+    padding: 0; }
+
+input {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  overflow: visible; }
+  input:focus {
+    outline: none; }
+
+@media (min-width: 1280px) {
+  body {
+    font-size: 16px; }
+
+  html {
+    font-size: 16px; } }
+.hide-line-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  /* number of lines to show */
+  -webkit-box-orient: vertical; }
+
+.card_shadow {
+  box-shadow: 0px 3px 30px #66AF4E33; }
+
+.menu-active {
+  color: #00831B; }
+
+a.menu-item::before {
+  content: "";
+  position: absolute;
+  height: 0px;
+  width: 100%;
+  background-color: #00831B;
+  top: -82%;
+  transition: height 0.3s 0s ease; }
+
+a.menu-active::before {
+  height: 3px; }
+
+/*# sourceMappingURL=index.css.map */

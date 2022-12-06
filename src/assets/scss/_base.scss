@@ -1,0 +1,126 @@
+$color_1: #434343;
+$color_2: #00831b;
+$color_3: #EEF8D880;
+$color_4: #f6a2b6;
+$color_5: #fff;
+$color_6: #6f8083;
+$color_7: #0D4E19;
+$font-family_1: FuturaMedium, Montserrat;
+$font-family_2: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+$font-family_3: inherit;
+$background-color_1: #fff;
+$background-color_2: transparent;
+$background-color_3: #ab8938;
+$background-color_4: #54360c;
+$border-color_1: #b7892e;
+
+@font-face {
+    src: url(../../assets/fonts/Segoe\ Script.ttf);
+    font-family: Segoe Script;
+}
+
+@font-face {
+    font-family: Futura;
+    src: url(../fonts/futura-light.ttf);
+}
+
+@font-face {
+    font-family: FuturaBold;
+    src: url(../fonts/Futura\ Bold\ font.ttf);
+}
+
+@font-face {
+    font-family: FuturaMedium;
+    src: url(../fonts/futura\ medium\ bt.ttf);
+}
+
+@font-face {
+    font-family: FuturaHeavy;
+    src: url(../fonts/Futura\ Heavy\ font.ttf);
+}
+
+body {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: $font-family_1;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 0;
+    overflow-x: hidden;
+    font-size: 18px;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: $background-color_2;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: $font-family_1  !important;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img {
+    border-style: none;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    border-radius: 0;
+    margin: 0;
+    font-family: $font-family_3;
+    font-size: inherit;
+    line-height: inherit;
+    overflow: visible;
+    text-transform: none;
+    -webkit-appearance: button;
+
+    &:focus {
+        outline: none;
+        outline: 5px auto -webkit-focus-ring-color;
+        outline: none;
+    }
+
+    &:not(:disabled) {
+        cursor: pointer;
+    }
+
+    &::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+    }
+}
+
+input {
+    margin: 0;
+    font-family: $font-family_3;
+    font-size: inherit;
+    line-height: inherit;
+    overflow: visible;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    html {
+        font-size: 16px;
+    }
+
+
+}

@@ -1,0 +1,19 @@
+.menu-active{
+    color: #00831B;
+}
+
+a.menu-item{
+    &::before {
+        content: "";
+        position: absolute;
+        height: 0px;
+        width: 100%;
+        background-color: #00831B;
+        top: -82%;
+        transition: height 0.3s 0s ease;
+    }
+    
+}
+    a.menu-active::before{
+        height: 3px;
+    }
